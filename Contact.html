@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Ethan Czajkowski
+        Mesa Community College
+        Pacific Trails Case Study
+        2/26/2024
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeebRecs</title>
+    <link rel="stylesheet" href="WeebRecs.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <a href="index.html">WeebRecs</a>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="Reccomendations.html">Reccomendations</a>
+            <a href="Contact.html" class="active">Contact</a>
+            <a href="AboutMe.html">About Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </nav>
+    <script>function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }</script>
+    <div id="mainhero" class="hero"></div>
+    <main>
+        <h1>Contact Me!</h1>
+        <h2>Leave a name for me to know you by, an email to message you at, and say whatever you wanna say and I'll get back to you</h2>
+        <form method="post" action="">
+            <label for="myName">Name:</label>
+            <input type="textbox" id="myName" name="myFame" required>
+            <label for="myEmail">E-mail address:</label>
+            <input type="email" id="myFName" name="myFName" required>
+            <label for="myComments">Comments:</label>
+            <textarea id="myComments" name="myComments" rows="2" cols="30" required></textarea>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    <footer>
+        Copyright © 2024 WeebRecs<br>
+        <a href="mailto:Czajkowskie5@gmail.com">Ethan@Czajkowski.com</a>
+    </footer>
+</div>
+</body>
+</html?  
